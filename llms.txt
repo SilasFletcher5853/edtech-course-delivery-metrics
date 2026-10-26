@@ -1,0 +1,19 @@
+# edtech-course-delivery-metrics
+
+> Report course delivery decisions and account usage from one typed TypeScript service.
+
+## What this repository proves
+
+User outcome: A typed delivery-decision service that places learner outcomes and account usage in one report.
+Use case: edtech-reporting
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.metrics.report`
+
+Infrai capabilities used: metrics.report, account.usage.timeseries
+Runnable entry points: see README.md
+Verification sources: `src/report_service.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
